@@ -31,8 +31,6 @@ private:
 
 public:
 	bool comand(const std::string& str);
-	bool serialize(const char* f);
-	bool deserialize(const char* f);
 
 private:
 	bool addVehicle(const char* registration, const char* description);
@@ -43,5 +41,6 @@ private:
 	bool remove(const char* registration);
 	bool show(const char* str);
 	bool show(unsigned int ID);
-
+	bool serialize(const char* f);
+	bool deserialize(const char* f);
 };
